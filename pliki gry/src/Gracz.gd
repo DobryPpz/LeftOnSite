@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
-
+func _ready():
+	position = Vector2(get_viewport().size/2)
 
 func _physics_process(delta):
 	if(Input.is_action_pressed("up")):
