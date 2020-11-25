@@ -2,8 +2,6 @@ extends Node
 
 var rng = RandomNumberGenerator.new()
 
-
-
 func _ready():
 	rng.randomize()
 	var scena_kamieni = load("res://src/Kamien.tscn")
