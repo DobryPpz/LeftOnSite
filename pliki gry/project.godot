@@ -19,10 +19,14 @@ config/name="Left On Site"
 run/main_scene="res://src/Gra.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+auto_load="*res://src/auto_load.gd"
+
 [display]
 
 window/size/width=960
-window/size/height=540
+window/size/height=544
 window/size/test_width=1920
 window/size/test_height=1080
 window/stretch/mode="viewport"
