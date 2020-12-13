@@ -1,5 +1,8 @@
 extends Node2D
 
+var tag = "kamien"
+var path_texture = "res://src/grafika_otoczenie/kamienie.png"
+
 func _on_Area2D_body_entered(body):
 	set_process(true)
 
