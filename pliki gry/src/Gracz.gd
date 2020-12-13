@@ -6,10 +6,6 @@ func _ready():
 	position = Vector2(get_viewport().size/2)
 
 func _physics_process(delta):
-#	if(ekwipunek_flag):
-#		if(Input.is_action_pressed("q")):
-#			ekwipunek_flag = false
-#			print(get_child(7).free())
 	if(Input.is_action_pressed("up")):
 		move_and_slide(Vector2(0,-180))
 	if(Input.is_action_pressed("down")):

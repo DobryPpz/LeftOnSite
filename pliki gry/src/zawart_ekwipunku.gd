@@ -1,31 +1,18 @@
 extends Node
 
-var slot_1 = []
-var slot_2 = []
-var slot_3 = []
-var slot_4 = []
-var slot_5 = []
-var slot_6 = []
-var slot_7 = []
-var slot_8 = []
-var slot_9 = []
-var slot_10 = []
-var slot_11 = []
-var slot_12 = []
-var slot_13 = []
-var slot_14 = []
-var slot_15 = []
+#sloty[0] : sloty główne
+#sloty[1] : sloty z paska szybkiego dostępu
+#sloty[2] : sloty craftingu
 
-var slot_pasek_1 = []
-var slot_pasek_2 = []
-var slot_pasek_3 = []
-var slot_pasek_4 = []
-var slot_pasek_5 = []
-
-var slot_crafting_1 = []
-var slot_crafting_2 = []
-var slot_crafting_3 = []
-var slot_crafting_4 = []
+var sloty = Array()
 
 func _ready():
-	pass 
+	sloty.append(Array())
+	sloty.append(Array())
+	sloty.append(Array())
+	for i in range(0,15):
+		sloty[0].append([null,0])
+	for i in range(0,5):
+		sloty[1].append([null,0])
+	for i in range(0,4):
+		sloty[2].append([null,0])
