@@ -1,7 +1,7 @@
 extends Node
 
 #sloty[0] : sloty główne
-#sloty[1] : sloty z paska szybkiego dostępu
+#sloty[1] : sloty paska szybkiego dostępu
 #sloty[2] : sloty craftingu
 
 var sloty = Array()
