@@ -10,5 +10,6 @@ func _ready():
 			#$Pasek_grid.get_child(i).get_child(1).set_texture(load(zawart_ekwipunku.sloty[1][i][0]))
 			$Pasek_grid.get_child(i).get_child(1).set_texture(load(zawart_ekwipunku.sloty[1][i][0]))
 			$Pasek_grid.get_child(i).get_child(1).position += Vector2(24,24)
+			$Pasek_grid.get_child(i).get_child(2).set_text(str(zawart_ekwipunku.sloty[1][i][1]))
 			print(zawart_ekwipunku.sloty[1][i][0])
 
