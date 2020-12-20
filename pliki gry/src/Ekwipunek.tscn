@@ -1,9 +1,34 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://grafika_ekwipunek/arrow.png" type="Texture" id=1]
 [ext_resource path="res://grafika_ekwipunek/okno.png" type="Texture" id=2]
 [ext_resource path="res://grafika_ekwipunek/BG.png" type="Texture" id=3]
 [ext_resource path="res://src/Ekwipunek.gd" type="Script" id=4]
+[ext_resource path="res://src/Button_0_2.gd" type="Script" id=5]
+[ext_resource path="res://src/Button_0_4.gd" type="Script" id=6]
+[ext_resource path="res://src/Button_0_0.gd" type="Script" id=7]
+[ext_resource path="res://src/Button_0_8.gd" type="Script" id=8]
+[ext_resource path="res://src/Button_0_9.gd" type="Script" id=9]
+[ext_resource path="res://src/Button_0_6.gd" type="Script" id=10]
+[ext_resource path="res://src/Button_0_3.gd" type="Script" id=11]
+[ext_resource path="res://src/Button_0_5.gd" type="Script" id=12]
+[ext_resource path="res://src/Button_0_7.gd" type="Script" id=13]
+[ext_resource path="res://src/Button_0_1.gd" type="Script" id=14]
+[ext_resource path="res://src/Button_1_3.gd" type="Script" id=15]
+[ext_resource path="res://src/Button_0_14.gd" type="Script" id=16]
+[ext_resource path="res://src/Button_2_2.gd" type="Script" id=17]
+[ext_resource path="res://src/Button_produkt.gd" type="Script" id=18]
+[ext_resource path="res://src/Button_0_13.gd" type="Script" id=19]
+[ext_resource path="res://src/Button_0_12.gd" type="Script" id=20]
+[ext_resource path="res://src/Button_1_1.gd" type="Script" id=21]
+[ext_resource path="res://src/Button_2_0.gd" type="Script" id=22]
+[ext_resource path="res://src/Button_0_10.gd" type="Script" id=23]
+[ext_resource path="res://src/Button_1_0.gd" type="Script" id=24]
+[ext_resource path="res://src/Button_1_2.gd" type="Script" id=25]
+[ext_resource path="res://src/Button_2_1.gd" type="Script" id=26]
+[ext_resource path="res://src/Button_1_4.gd" type="Script" id=27]
+[ext_resource path="res://src/Button_2_3.gd" type="Script" id=28]
+[ext_resource path="res://src/Button_0_11.gd" type="Script" id=29]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 2 )
@@ -77,6 +102,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot1"]
+margin_right = 48.0
+margin_bottom = 48.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot2" type="Panel" parent="Ekwipunek_grid"]
 margin_left = 52.0
 margin_right = 100.0
@@ -97,6 +130,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot2"]
+margin_right = 44.0
+margin_bottom = 48.0
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -125,6 +166,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot3"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot4" type="Panel" parent="Ekwipunek_grid"]
 margin_left = 156.0
 margin_right = 204.0
@@ -145,6 +194,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot4"]
+margin_right = 44.0
+margin_bottom = 48.0
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -173,6 +230,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot5"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot6" type="Panel" parent="Ekwipunek_grid"]
 margin_top = 52.0
 margin_right = 48.0
@@ -193,6 +258,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot6"]
+margin_right = 40.0
+margin_bottom = 44.0
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -222,6 +295,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot7"]
+margin_right = 44.0
+margin_bottom = 44.0
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot8" type="Panel" parent="Ekwipunek_grid"]
 margin_left = 104.0
 margin_top = 52.0
@@ -243,6 +324,15 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot8"]
+margin_top = 4.0
+margin_right = 40.0
+margin_bottom = 44.0
+script = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -272,6 +362,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot9"]
+margin_right = 44.0
+margin_bottom = 44.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot10" type="Panel" parent="Ekwipunek_grid"]
 margin_left = 208.0
 margin_top = 52.0
@@ -297,6 +395,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot10"]
+margin_right = 40.0
+margin_bottom = 44.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot11" type="Panel" parent="Ekwipunek_grid"]
 margin_top = 104.0
 margin_right = 48.0
@@ -317,6 +423,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot11"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 23 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -346,6 +460,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot12"]
+margin_right = 44.0
+margin_bottom = 48.0
+script = ExtResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot13" type="Panel" parent="Ekwipunek_grid"]
 margin_left = 104.0
 margin_top = 104.0
@@ -367,6 +489,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot13"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 20 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -396,6 +526,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot14"]
+margin_left = 4.0
+margin_right = 44.0
+margin_bottom = 40.0
+script = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot15" type="Panel" parent="Ekwipunek_grid"]
 margin_left = 208.0
 margin_top = 104.0
@@ -417,6 +556,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Ekwipunek_grid/slot15"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -454,6 +601,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Pasek_grid/slot1"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot2" type="Panel" parent="Pasek_grid"]
 margin_left = 52.0
 margin_right = 100.0
@@ -474,6 +629,14 @@ margin_left = 20.0
 margin_top = 32.0
 margin_right = 44.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Pasek_grid/slot2"]
+margin_right = 44.0
+margin_bottom = 48.0
+script = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -502,6 +665,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Pasek_grid/slot3"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot4" type="Panel" parent="Pasek_grid"]
 margin_left = 156.0
 margin_right = 204.0
@@ -526,6 +697,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Pasek_grid/slot4"]
+margin_right = 44.0
+margin_bottom = 48.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot5" type="Panel" parent="Pasek_grid"]
 margin_left = 208.0
 margin_right = 256.0
@@ -546,6 +725,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Pasek_grid/slot5"]
+margin_right = 40.0
+margin_bottom = 48.0
+script = ExtResource( 27 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -583,6 +770,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Crafting_grid/slot1"]
+margin_right = 48.0
+margin_bottom = 48.0
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot2" type="Panel" parent="Crafting_grid"]
 margin_left = 52.0
 margin_right = 100.0
@@ -607,6 +802,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Crafting_grid/slot2"]
+margin_right = 44.0
+margin_bottom = 48.0
+script = ExtResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot3" type="Panel" parent="Crafting_grid"]
 margin_top = 52.0
 margin_right = 48.0
@@ -627,6 +830,14 @@ margin_left = 24.0
 margin_top = 32.0
 margin_right = 48.0
 margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Crafting_grid/slot3"]
+margin_right = 48.0
+margin_bottom = 44.0
+script = ExtResource( 17 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -656,6 +867,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="Crafting_grid/slot4"]
+margin_right = 44.0
+margin_bottom = 44.0
+script = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Produkt" type="Panel" parent="."]
 margin_left = 72.0
 margin_top = 216.0
@@ -677,6 +896,11 @@ shape = SubResource( 8 )
 [node name="Label" type="Label" parent="Produkt"]
 margin_right = 40.0
 margin_bottom = 14.0
+
+[node name="Button" type="Button" parent="Produkt"]
+margin_right = 48.0
+margin_bottom = 48.0
+script = ExtResource( 18 )
 
 [node name="arrow" type="TextureRect" parent="."]
 margin_left = 64.0
