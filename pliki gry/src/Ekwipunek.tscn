@@ -103,6 +103,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot1"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
 script = ExtResource( 7 )
@@ -135,6 +136,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot2"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 48.0
 script = ExtResource( 14 )
@@ -167,6 +169,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot3"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 5 )
@@ -199,6 +202,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot4"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 48.0
 script = ExtResource( 11 )
@@ -231,6 +235,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot5"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 6 )
@@ -263,6 +268,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot6"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 44.0
 script = ExtResource( 12 )
@@ -296,6 +302,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot7"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 44.0
 script = ExtResource( 10 )
@@ -329,6 +336,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot8"]
+modulate = Color( 1, 1, 1, 0 )
 margin_top = 4.0
 margin_right = 40.0
 margin_bottom = 44.0
@@ -363,6 +371,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot9"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 44.0
 script = ExtResource( 8 )
@@ -396,6 +405,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot10"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 44.0
 script = ExtResource( 9 )
@@ -428,6 +438,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot11"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 23 )
@@ -461,6 +472,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot12"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 48.0
 script = ExtResource( 29 )
@@ -494,6 +506,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot13"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 20 )
@@ -527,6 +540,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot14"]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 4.0
 margin_right = 44.0
 margin_bottom = 40.0
@@ -561,6 +575,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Ekwipunek_grid/slot15"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 16 )
@@ -602,6 +617,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Pasek_grid/slot1"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 24 )
@@ -634,6 +650,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Pasek_grid/slot2"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 48.0
 script = ExtResource( 21 )
@@ -666,6 +683,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Pasek_grid/slot3"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 25 )
@@ -698,6 +716,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Pasek_grid/slot4"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 48.0
 script = ExtResource( 15 )
@@ -730,6 +749,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Pasek_grid/slot5"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 48.0
 script = ExtResource( 27 )
@@ -771,6 +791,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Crafting_grid/slot1"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
 script = ExtResource( 22 )
@@ -803,6 +824,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Crafting_grid/slot2"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 48.0
 script = ExtResource( 26 )
@@ -835,6 +857,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Crafting_grid/slot3"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 44.0
 script = ExtResource( 17 )
@@ -868,6 +891,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Crafting_grid/slot4"]
+self_modulate = Color( 1, 1, 1, 0 )
 margin_right = 44.0
 margin_bottom = 44.0
 script = ExtResource( 28 )
@@ -898,6 +922,7 @@ margin_right = 40.0
 margin_bottom = 14.0
 
 [node name="Button" type="Button" parent="Produkt"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
 script = ExtResource( 18 )

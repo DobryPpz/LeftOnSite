@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Button",
+"class": "Button_item",
+"language": "GDScript",
+"path": "res://src/Button_item.gd"
+}, {
 "base": "Node",
 "class": "Pickable",
 "language": "GDScript",
 "path": "res://src/Pickable.gd"
 } ]
 _global_script_class_icons={
+"Button_item": "",
 "Pickable": ""
 }
 

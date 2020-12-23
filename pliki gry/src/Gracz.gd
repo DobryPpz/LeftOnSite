@@ -22,5 +22,6 @@ func _physics_process(delta):
 			ekwipunek_flag = true
 		else:
 			ekwipunek_flag = false
+			auto_load.jest_trzymane = false
 			get_child(7).free()#zamykam ekwipunek
 			

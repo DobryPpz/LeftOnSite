@@ -22,6 +22,10 @@ func _ready():
 			$Crafting_grid.get_child(i).get_child(1).set_texture(load(zawart_ekwipunku.sloty[2][i][0]))
 			$Crafting_grid.get_child(i).get_child(1).position += Vector2(24,24)
 			$Crafting_grid.get_child(i).get_child(2).set_text(str(zawart_ekwipunku.sloty[2][i][1]))
-
+	for i in range(0,1):
+		if(zawart_ekwipunku.sloty[3][i][0] != null):
+			$Produkt.get_child(1).set_texture(load(zawart_ekwipunku.sloty[3][i][0]))
+			$Produkt.get_child(1).position += Vector2(24,24)
+			$Produkt.get_child(2).set_text(str(zawart_ekwipunku.sloty[3][i][1]))
 
 
