@@ -1,6 +1,7 @@
 extends Node2D
 
-var info
+var info = Array()
+var path
 
 func _ready():
 	set_process(true)
