@@ -10,13 +10,13 @@ func _ready():
 func _pressed():
 	print(info)
 	if(auto_load.jest_trzymane):
+		var scena_item = get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Item")
 		if(zawart_ekwipunku.sloty[info[0]][info[1]][0] == null):
 			#umieść item w slocie
 			#usuń item z poprzedniego slotu
 			#przerysuj ekwipunek
 			auto_load.jest_trzymane = false
 			
-			var scena_item = get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Item")
 			
 			zawart_ekwipunku.sloty[info[0]][info[1]][0] = scena_item.path
 			zawart_ekwipunku.sloty[info[0]][info[1]][1] = scena_item.info[2]
@@ -31,9 +31,11 @@ func _pressed():
 			scena_item.free()
 			
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").rysuj()
+		elif(info[0]==scena_item.info[0] and info[1]==scena_item.info[1]):
+			auto_load.jest_trzymane = false
+			scena_item.free()
 	else:
 		if(zawart_ekwipunku.sloty[info[0]][info[1]][0] != null):
-			pass
 			#podnieś item
 			#przerysuj ekwipunek
 			auto_load.jest_trzymane = true
