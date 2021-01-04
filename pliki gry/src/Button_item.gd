@@ -34,6 +34,18 @@ func _pressed():
 		elif(info[0]==scena_item.info[0] and info[1]==scena_item.info[1]):
 			auto_load.jest_trzymane = false
 			scena_item.free()
+		elif(zawart_ekwipunku.sloty[info[0]][info[1]][0] == scena_item.path):
+			auto_load.jest_trzymane = false
+			zawart_ekwipunku.sloty[info[0]][info[1]][1] += scena_item.info[2]
+			
+			zawart_ekwipunku.sloty[scena_item.info[0]][scena_item.info[1]][0] = null
+			zawart_ekwipunku.sloty[scena_item.info[0]][scena_item.info[1]][1] = 0
+			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Sprite").texture = null
+			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Sprite").position += Vector2(-24,-24)
+			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Label").set_text("")
+			
+			scena_item.free()
+			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").rysuj()
 	else:
 		if(zawart_ekwipunku.sloty[info[0]][info[1]][0] != null):
 			#podnieś item
