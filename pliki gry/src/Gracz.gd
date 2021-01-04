@@ -19,9 +19,14 @@ func _physics_process(delta):
 			var ekwipunek = load("res://src/Ekwipunek.tscn")
 			ekwipunek = ekwipunek.instance()
 			get_parent().get_node("Gracz").add_child(ekwipunek)
+			get_parent().get_node("Gracz").get_node("Pasek").free()
 			ekwipunek_flag = true
-		else:
+		else:#zamykam ekwipunek
 			ekwipunek_flag = false
 			auto_load.jest_trzymane = false
-			get_child(7).free()#zamykam ekwipunek
+			get_parent().get_node("Gracz").get_node("Ekwipunek").free()
+			var pasek = load("res://src/Pasek.tscn")
+			pasek = pasek.instance()
+			get_parent().get_node("Gracz").add_child(pasek)
+			#get_child(7).free()#zamykam ekwipunek
 			
