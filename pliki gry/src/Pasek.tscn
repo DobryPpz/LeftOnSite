@@ -27,8 +27,10 @@ custom_styles/panel = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="grid/slot1"]
 
 [node name="Label" type="Label" parent="grid/slot1"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 24.0
+margin_top = 34.0
+margin_right = 48.0
+margin_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -51,8 +53,10 @@ custom_styles/panel = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="grid/slot2"]
 
 [node name="Label" type="Label" parent="grid/slot2"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 22.0
+margin_top = 34.0
+margin_right = 47.0
+margin_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -75,8 +79,10 @@ custom_styles/panel = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="grid/slot3"]
 
 [node name="Label" type="Label" parent="grid/slot3"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 24.0
+margin_top = 34.0
+margin_right = 48.0
+margin_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -99,8 +105,10 @@ custom_styles/panel = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="grid/slot4"]
 
 [node name="Label" type="Label" parent="grid/slot4"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 20.0
+margin_top = 34.0
+margin_right = 46.0
+margin_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -123,8 +131,10 @@ custom_styles/panel = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="grid/slot5"]
 
 [node name="Label" type="Label" parent="grid/slot5"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 24.0
+margin_top = 34.0
+margin_right = 48.0
+margin_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

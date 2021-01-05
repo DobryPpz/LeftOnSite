@@ -27,6 +27,10 @@ func _process(delta):
 		if(miejsce != null):
 			zawart_ekwipunku.sloty[miejsce[0]][miejsce[1]][0] = path_texture
 			zawart_ekwipunku.sloty[miejsce[0]][miejsce[1]][1] += 1
+			get_tree().get_root().get_node("Gra/Gracz/Pasek").free()
+			var pasek = load("res://src/Pasek.tscn")
+			pasek = pasek.instance()
+			get_tree().get_root().get_node("Gra/Gracz").add_child(pasek)
 #			print(zawart_ekwipunku.sloty[miejsce[0]][miejsce[1]][0]," ",zawart_ekwipunku.sloty[miejsce[0]][miejsce[1]][1])
 			free()
 		#tutaj odbywa się dodanie itema do ekwipunku
