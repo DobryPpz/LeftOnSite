@@ -11,7 +11,7 @@ func _pressed():
 	print(info)
 	if(auto_load.jest_trzymane):
 		var scena_item = get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Item")
-		if(zawart_ekwipunku.sloty[info[0]][info[1]][0] == null):
+		if(zawart_ekwipunku.sloty[info[0]][info[1]][0] == null):#nowe miejsce
 			#umieść item w slocie
 			#usuń item z poprzedniego slotu
 			#przerysuj ekwipunek
@@ -28,13 +28,21 @@ func _pressed():
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Sprite").position += Vector2(-24,-24)
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Label").set_text("")
 			
+			if(info[0]==2):
+				crafting.item_types[scena_item.path] += 1
+			#jeśli zabieramy item z pola craftingu to w autoloadzie craftingu zabierz jeden raz z typu tego itema
+			if(scena_item.info[0] == 2):
+				crafting.item_types[scena_item.path] -= 1
+			crafting.check()
+			print("ITEM TYPES: ",crafting.item_types[scena_item.path])
+				
 			scena_item.free()
 			
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").rysuj()
-		elif(info[0]==scena_item.info[0] and info[1]==scena_item.info[1]):
+		elif(info[0]==scena_item.info[0] and info[1]==scena_item.info[1]):#to samo miejsce
 			auto_load.jest_trzymane = false
 			scena_item.free()
-		elif(zawart_ekwipunku.sloty[info[0]][info[1]][0] == scena_item.path):
+		elif(zawart_ekwipunku.sloty[info[0]][info[1]][0] == scena_item.path):#grupujemy itemy
 			auto_load.jest_trzymane = false
 			zawart_ekwipunku.sloty[info[0]][info[1]][1] += scena_item.info[2]
 			
@@ -43,6 +51,12 @@ func _pressed():
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Sprite").texture = null
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Sprite").position += Vector2(-24,-24)
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").get_child(1+scena_item.info[0]).get_child(scena_item.info[1]).get_node("Label").set_text("")
+			
+			#jeśli zabieramy item z pola craftingu to w autoloadzie craftingu zabierz jeden raz z typu tego itema
+			if(scena_item.info[0] == 2):
+				crafting.item_types[scena_item.path] -= 1
+			crafting.check()
+			print("ITEM TYPES: ",crafting.item_types[scena_item.path])
 			
 			scena_item.free()
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").rysuj()

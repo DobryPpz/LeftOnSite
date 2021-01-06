@@ -34,6 +34,7 @@ config/icon="res://icon.png"
 
 auto_load="*res://src/auto_load.gd"
 zawart_ekwipunku="*res://src/zawart_ekwipunku.gd"
+crafting="*res://src/crafting.gd"
 
 [display]
 

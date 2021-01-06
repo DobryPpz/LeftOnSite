@@ -918,8 +918,13 @@ shape = SubResource( 8 )
 [node name="Sprite" type="Sprite" parent="Produkt"]
 
 [node name="Label" type="Label" parent="Produkt"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 24.0
+margin_top = 32.0
+margin_right = 48.0
+margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Button" type="Button" parent="Produkt"]
 visible = false
