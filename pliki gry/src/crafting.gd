@@ -14,7 +14,7 @@ func check():
 	if(item_types["res://grafika_otoczenie/patyki.png"] == 1 and item_types["res://grafika_otoczenie/kamienie.png"] == 2):
 		zawart_ekwipunku.sloty[3][0][0] = "res://grafika_crafting/siekiera_kamien.png"
 		zawart_ekwipunku.sloty[3][0][1] = 1
-	
+	get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Produkt/Sprite").position = get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Produkt/Button").rect_position + Vector2(24,24)
 
 func _ready():
 	item_types = {
