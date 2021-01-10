@@ -1,9 +1,10 @@
 extends Node2D
 
 func rysuj_produkt():
-	$Produkt.get_child(1).set_texture(load(zawart_ekwipunku.sloty[3][0][0]))
-	$Produkt.get_child(1).position += Vector2(24,24)
-	$Produkt.get_child(2).set_text(str(zawart_ekwipunku.sloty[3][0][1]))
+	if(zawart_ekwipunku.sloty[3][0][0] != null):
+		$Produkt.get_child(1).set_texture(load(zawart_ekwipunku.sloty[3][0][0]))
+		$Produkt.get_child(1).position += Vector2(24,24)
+		$Produkt.get_child(2).set_text(str(zawart_ekwipunku.sloty[3][0][1]))
 
 func rysuj():
 	for i in range(0,5):

@@ -927,7 +927,6 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Produkt"]
-visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
