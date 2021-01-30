@@ -1,7 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://grafika_ekwipunek/okno.png" type="Texture" id=1]
 [ext_resource path="res://src/Pasek.gd" type="Script" id=2]
+[ext_resource path="res://src/button_pasek_0.gd" type="Script" id=3]
+[ext_resource path="res://src/button_pasek_1.gd" type="Script" id=4]
+[ext_resource path="res://src/button_pasek_2.gd" type="Script" id=5]
+[ext_resource path="res://src/button_pasek_3.gd" type="Script" id=6]
+[ext_resource path="res://src/button_pasek_4.gd" type="Script" id=7]
+[ext_resource path="res://grafika_ekwipunek/wybrane.png" type="Texture" id=8]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
@@ -26,6 +32,9 @@ custom_styles/panel = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="grid/slot1"]
 
+[node name="czerwone_okno" type="Sprite" parent="grid/slot1"]
+texture = ExtResource( 8 )
+
 [node name="Label" type="Label" parent="grid/slot1"]
 margin_left = 24.0
 margin_top = 34.0
@@ -39,6 +48,7 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -51,6 +61,9 @@ rect_min_size = Vector2( 48, 48 )
 custom_styles/panel = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="grid/slot2"]
+
+[node name="czerwone_okno" type="Sprite" parent="grid/slot2"]
+texture = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="grid/slot2"]
 margin_left = 22.0
@@ -65,6 +78,7 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -77,6 +91,9 @@ rect_min_size = Vector2( 48, 48 )
 custom_styles/panel = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="grid/slot3"]
+
+[node name="czerwone_okno" type="Sprite" parent="grid/slot3"]
+texture = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="grid/slot3"]
 margin_left = 24.0
@@ -91,6 +108,7 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -103,6 +121,9 @@ rect_min_size = Vector2( 48, 48 )
 custom_styles/panel = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="grid/slot4"]
+
+[node name="czerwone_okno" type="Sprite" parent="grid/slot4"]
+texture = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="grid/slot4"]
 margin_left = 20.0
@@ -117,6 +138,7 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -129,6 +151,9 @@ rect_min_size = Vector2( 48, 48 )
 custom_styles/panel = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="grid/slot5"]
+
+[node name="czerwone_okno" type="Sprite" parent="grid/slot5"]
+texture = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="grid/slot5"]
 margin_left = 24.0
@@ -143,6 +168,7 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 48.0
 margin_bottom = 48.0
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

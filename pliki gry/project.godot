@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "Pickable",
 "language": "GDScript",
 "path": "res://src/Pickable.gd"
+}, {
+"base": "Node",
+"class": "pasek_class",
+"language": "GDScript",
+"path": "res://src/pasek_class.gd"
 } ]
 _global_script_class_icons={
 "Button_item": "",
-"Pickable": ""
+"Pickable": "",
+"pasek_class": ""
 }
 
 [application]
