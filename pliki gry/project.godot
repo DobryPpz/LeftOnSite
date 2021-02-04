@@ -41,6 +41,7 @@ config/icon="res://icon.png"
 auto_load="*res://src/auto_load.gd"
 zawart_ekwipunku="*res://src/zawart_ekwipunku.gd"
 crafting="*res://src/crafting.gd"
+sprite_frames="*res://src/sprite_frames.gd"
 
 [display]
 
@@ -81,6 +82,11 @@ space={
 q={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"unicode":0,"echo":false,"script":null)
+ ]
+}
+f={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
  ]
 }
 

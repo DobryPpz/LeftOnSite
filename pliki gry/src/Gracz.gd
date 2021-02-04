@@ -29,4 +29,11 @@ func _physics_process(delta):
 			pasek = pasek.instance()
 			get_parent().get_node("Gracz").add_child(pasek)
 			#get_child(7).free()#zamykam ekwipunek
+	if(Input.is_action_pressed("f")):
+		if(get_node("animacje").get_child_count() != 0):
+			get_node("animacje").get_child(0).play()
+	else:
+		if(get_node("animacje").get_child_count() != 0):
+			get_node("animacje").get_child(0).stop()
+			get_node("animacje").get_child(0).frame = 0
 			

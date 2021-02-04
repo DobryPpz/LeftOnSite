@@ -25,6 +25,7 @@ func _pressed():
 				zawart_ekwipunku.sloty[scena_item.info[0]][scena_item.info[1]][0] = null
 				zawart_ekwipunku.sloty[scena_item.info[0]][scena_item.info[1]][1] = 0
 				if(scena_item.info[0] == 3):
+					crafting.czysc()
 					get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Produkt/Sprite").texture = null
 					get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Produkt/Sprite").position += Vector2(-24,-24)
 					get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Produkt/Label").set_text("")
@@ -40,7 +41,8 @@ func _pressed():
 					crafting.item_types[scena_item.path] -= 1
 				crafting.check()
 				#print("ITEM TYPES: ",crafting.item_types[scena_item.path])
-					
+#				if(scena_item.info[0] == 3):
+#					crafting.czysc()
 				scena_item.free()
 				
 				get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").rysuj()
@@ -87,4 +89,5 @@ func _pressed():
 			scena_item.info.append(zawart_ekwipunku.sloty[info[0]][info[1]][1])#ilość
 			scena_item.path = zawart_ekwipunku.sloty[info[0]][info[1]][0]#ścieżka do pliku
 			get_tree().get_root().get_node("Gra/Gracz/Ekwipunek").add_child(scena_item)
+			
 			#print(get_tree().get_root().get_node("Gra/Gracz/Ekwipunek/Item").name)
