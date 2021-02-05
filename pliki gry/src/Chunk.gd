@@ -19,6 +19,8 @@ onready var path_chunki = get_tree().get_root().get_node("Gra").get_node("chunki
 onready var scena_patykow = load("res://src/Patyk.tscn")
 onready var scena_kamieni = load("res://src/Kamien.tscn")
 onready var scena_chunk = load("res://src/Chunk.tscn")
+onready var scena_ruda_zelaza = load("res://src/Ruda_zelaza.tscn")
+
 
 func _ready():
 	rng.randomize()
@@ -37,6 +39,12 @@ func gen():
 		var node = scena_kamieni.instance()
 		node.position = Vector2(rng.randi_range(32,size_x-32),rng.randi_range(32,size_y-32))
 		$kamienie.add_child(node)
+	if(rng.randi_range(1,4) == 1):
+		var node = scena_ruda_zelaza.instance()
+		node.position = Vector2(rng.randi_range(64,size_x-64),rng.randi_range(64,size_y-64))
+		get_tree().get_root().get_node("Gra/ruda_zelaza").add_child(node)
+		
+	
 			
 func _on_strefa_area_entered(area):
 	if(area==path_granica_1 or area==path_granica_2 or area==path_granica_3 or area==path_granica_4):

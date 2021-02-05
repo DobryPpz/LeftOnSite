@@ -11,6 +11,7 @@ func _pressed():
 		get_parent().get_parent().get_child(i).get_child(1).visible = false
 	get_parent().get_parent().get_child(nr).get_child(1).visible = true
 	auto_load.pasek_wybrany = nr
+	auto_load.wybrano_flag = true
 #	if(zawart_ekwipunku.sloty[1][nr][0] != null):
 #		get_tree().get_root().get_node("Gra/Gracz/trzymane").set_texture(load(zawart_ekwipunku.sloty[1][nr][0]))
 #		if(auto_load.wybrano_flag == false):

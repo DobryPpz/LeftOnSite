@@ -107,6 +107,10 @@ script = ExtResource( 3 )
 [node name="patyki" type="Node" parent="."]
 script = ExtResource( 4 )
 
+[node name="zelazo" type="Node" parent="."]
+
+[node name="ruda_zelaza" type="Node" parent="."]
+
 [node name="Gracz" parent="." instance=ExtResource( 2 )]
 
 [node name="granica_1" type="Area2D" parent="Gracz"]
